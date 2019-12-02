@@ -1,0 +1,17 @@
+{% extends 'login.html' %}
+
+{% block head %}
+<title>Registration </title>
+{% endblock %}
+
+
+{% block body %}
+<br>
+<div class="container">
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+</div>
+{% endblock %}

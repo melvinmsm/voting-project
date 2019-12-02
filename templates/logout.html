@@ -1,0 +1,21 @@
+﻿{% extends 'base.html'%}
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>LOGIN </title>
+    {% block head %}
+    {% load static %}
+    <link rel='stylesheet' href="{% static 'login/login.css' %}" type="text/css">
+    {% endblock %}
+</head>
+<body>
+    {% block body %}
+    <div class="jumbotron">
+        <h1>You have logged out!</h1>
+        
+    </div>
+    {% endblock %}
+</body>
+</html>
