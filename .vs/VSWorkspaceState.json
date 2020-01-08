@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
-    "",
     "\\login",
     "\\login\\static",
     "\\login\\static\\login",
+    "\\polls",
     "\\templates"
   ],
-  "SelectedNode": "\\templates\\regform.html",
   "PreviewInSolutionExplorer": false
 }

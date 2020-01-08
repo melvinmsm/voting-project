@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url,include
 from login import views
+from polls import viewspolls
 from voting import views as voting_views   
 urlpatterns = [
     path('',voting_views.loginredirect,name='login redirect'),
@@ -25,6 +26,8 @@ urlpatterns = [
     path('register/',views.register,name='register'),
     path('profile/',views.profile,name='profile'),
     path('profile/edit/',views.editprofile,name='editprofile'),
+    path('vote/',viewspolls.vote,name='vote'),
+    path('uservote/',viewspolls.uservote,name='uservote'),
 
 
 ]

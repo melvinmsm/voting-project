@@ -1,0 +1,22 @@
+﻿{% extends 'vote.html'%}
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    {% block head %}
+    {% load static %}
+    <title>User Voting</title>
+    {% endblock %}
+</head>
+<body>
+    {% block body%}
+    <div  class="jumbotron">
+        <h1>You can cast your vote here...</h1>
+        <input type="radio" name="grp1" value="option 1">Option 1
+        <input type="radio" name="grp1" value="option 2">Option 2<br>
+        <button type="submit" value="submit">Submit</button>
+    </div>
+    {% endblock %}
+</body>
+</html>
